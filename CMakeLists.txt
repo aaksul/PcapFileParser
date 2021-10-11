@@ -4,7 +4,12 @@ project(Project1 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
+add_subdirectory(Collection)
+
+
 add_executable(Project1 main.cpp)
+
+
 
 target_link_libraries(Project1 pcap)
 

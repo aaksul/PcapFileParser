@@ -11,8 +11,9 @@ add_executable(Project1 main.cpp)
 
 
 
-target_link_libraries(Project1 pcap)
+target_link_libraries(Project1 pcap Collection)
 
+add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS=ON)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)

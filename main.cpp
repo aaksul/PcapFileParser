@@ -12,12 +12,14 @@ int main(int argc, char **argv)
         auto y=x.Create_Iterator();
         auto z=y->Get_Next_Packet_Info();
         col1.Add_Packet(z);
-        z=y->Get_Next_Packet_Info();
-        col1.Add_Packet(z);
-        z=y->Get_Next_Packet_Info();
-        col1.Add_Packet(z);
-        z=y->Get_Next_Packet_Info();
-        col1.Add_Packet(z);
+        int i{0};
+        while (i!= 1000)
+        {
+                z=y->Get_Next_Packet_Info();
+                col1.Add_Packet(z);
+                i++;
+        }
+
         col1.List_Packet();
         
          

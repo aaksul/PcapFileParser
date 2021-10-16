@@ -1,5 +1,8 @@
 #include<iostream>
+#include<iterator>
+#include<map>
 #include<vector>
+
 
 class Icollection
 {
@@ -22,9 +25,8 @@ public:
 class Packet_collection:collection
 {
 private:
-    std::vector<const ip_header*> packets;
+    std::map<const int*,std::vector<const struct ip_header*>> packets;
     int size;
-
 public:
     Packet_collection(/* args */);
     virtual void Add_Packet(const struct ip_header*);

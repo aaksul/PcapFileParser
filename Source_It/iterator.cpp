@@ -16,21 +16,7 @@ ip_header* PcapFile_It::Get_Next_Packet_Info()
     struct ip_header* my_ip{new ip_header()};
     pcap_pkthdr* head;
     const u_char* data;
-    //if (pcap_next_ex(fp,&head,&data)==1)
-    //{
-        /*printf("%d- ",count);
-        printf("Source IP:");
-        for (size_t i = 26; i < 30; i++)
-        {
-            printf(".%d",data[i]);
-        }
-        printf(" Dest IP:");
-        for (size_t i = 30; i < 34; i++)
-        {
-            printf(".%d",data[i]);
-        }
-        printf("\n");*/
-    //}
+    
     pcap_next_ex(fp,&head,&data);
     for (size_t i = 0; i < 4; i++)
     {

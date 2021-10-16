@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <pcap.h>
+#include<iterator_source.h>
+#include<source.h>
 #include<collection.h>
 
-
 int main(int argc, char **argv)
-{
-pcap_t *fp;
-char errbuf[PCAP_ERRBUF_SIZE];
-char source[PCAP_BUF_SIZE];
-char* Fn;
-    if(argc != 2){
+{  
 
-        printf("usage: %s filename", argv[0]);
-        return -1;
-
-    }
-
-Fn=argv[1];
-auto x = pcap_open_offline(Fn,errbuf);
-
-if (x==NULL)
-{
-    printf("Couldnt open file %s\n",Fn);
-    return -1;
-}
-
-
+        Packet_collection col1=Packet_collection();
+        auto x=Pcap_File(argv[1]);
+        auto y=x.Create_Iterator();
+        auto z=y->Get_Next_Packet_Info();
+        col1.Add_Packet(z);
+        z=y->Get_Next_Packet_Info();
+        col1.Add_Packet(z);
+        z=y->Get_Next_Packet_Info();
+        col1.Add_Packet(z);
+        z=y->Get_Next_Packet_Info();
+        col1.Add_Packet(z);
+        col1.List_Packet();
+        
+         
+                
 }

@@ -31,7 +31,6 @@ class PcapFile_It: public iterator
 private:
     class Pcap_File* source;
     pcap_t* fp;
-    int count;
 public:
     PcapFile_It(Pcap_File*,pcap_t*);
     //~PcapFile_It();

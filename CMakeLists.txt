@@ -4,8 +4,6 @@ project(Project1 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_subdirectory(Packet)
-add_subdirectory(IBuilder)
 add_subdirectory(Source_It)
 add_subdirectory(Source)
 add_subdirectory(Collection)

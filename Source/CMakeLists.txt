@@ -1,6 +1,6 @@
 
 
-add_library(Source source.cpp source.h)
+add_library(Source source.cpp)
 
 
 target_include_directories(Source

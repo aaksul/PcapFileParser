@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {  
         if(argv[1] ==NULL)
         {
-                printf("usage %s filename [IP_ADRRESS]<OPT>\n",argv[0]);
+                printf("usage %s filename [IP_ADRRESS]<OPT>\n   ",argv[0]);
                 return 0;
         }
         Packet_collection collect=Packet_collection();

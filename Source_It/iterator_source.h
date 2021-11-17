@@ -2,10 +2,9 @@
 #define ITERATOR_SOURCE
 
 #include<iostream>
-#include<pcap.h>
 #include<ip_header.h>
 
-class source;
+typedef struct pcap pcap_t;
 
 class Iiterator
 {

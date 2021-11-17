@@ -1,5 +1,8 @@
 #include<iterator_source.h>
+#include<pcap_file.h>
 #include<source.h>
+#include<pcap.h>
+
 Pcap_File::Pcap_File(const char* filename)
 {
     

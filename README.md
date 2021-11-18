@@ -9,5 +9,7 @@ cd build
 cmake ..
 cmake --build .
 ```
+## Demonstration
+![demo gif](Document/usage.gif)
 ## Diagram
 ![Alt text](/Document/flowchart.png "Diagram")

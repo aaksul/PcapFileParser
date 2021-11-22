@@ -11,6 +11,7 @@ cmake --build .
 ```
 ## Demonstration
 ![demo gif](Document/usage.gif)
+To list each one of the packet counts which by sent from their sender IP addresses
 ```
 >./Project1 <path-to-input-pcap-file>
 ```

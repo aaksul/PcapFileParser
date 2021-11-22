@@ -11,5 +11,12 @@ cmake --build .
 ```
 ## Demonstration
 ![demo gif](Document/usage.gif)
+```
+>./Project1 <path-to-input-pcap-file>
+```
+To produce packet number which by count packets sent by given IP address  
+```
+>./Project1 <path-to-input-pcap-file> <IP-Address>
+```
 ## Diagram
 ![Alt text](/Document/flowchart.png "Diagram")

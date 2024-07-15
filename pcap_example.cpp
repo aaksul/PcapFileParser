@@ -32,9 +32,7 @@ int i = 0;
 
     while (int returnValue = pcap_next_ex(fp, &header, &data) >= 0)
     {
-        // Print using printf. See printf reference:
-        // http://www.cplusplus.com/reference/clibrary/cstdio/printf/
- 
+
         // Show the packet number
         printf("Packet # %i\n", ++packetCount);
  
